@@ -29,7 +29,7 @@ public class Empresas implements Serializable {
 	}
 
 	public List<Empresa> pesquisar(String nome) {
-		String jpql = "from Empresa where nomeFantasia like :nomeFantasia";
+		String jpql = "from Empresa where razaoSocial like :nomeFantasia";
 		
 		TypedQuery<Empresa> query = manager
 				.createQuery(jpql, Empresa.class);
